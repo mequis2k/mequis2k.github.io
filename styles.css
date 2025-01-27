@@ -31,21 +31,46 @@
 #hidden {
   visibility: hidden;
   position: absolute;
+  height: 100%;
   width: 100%;
+  display: flex;align-items: center;justify-content: center;flex-direction: column;
 }
 .myprojects {
   margin-bottom: 5vh;
-
 }
-.nextproject{
-    text-decoration: none;
+.nextproject {
+  text-decoration: none;
 }
 .nextprojecttxt {
-    transition: .3s;
-    cursor: pointer;
+  transition: 0.3s;
+  cursor: pointer;
 }
 .nextprojecttxt:hover {
-    transform: scale(1.2);
-    color: #00d5ff;
-    font-weight: bold;
+  color: #00d5ff;
+  font-weight: bold;
+}
+
+.support {
+  position: relative;
+  color: rgba(255, 255, 255, 0.25);
+  margin-top: 10vh;
+  cursor: pointer;
+  transition: 0.2s;width: 100%;
+}
+.contact {
+  margin-top: 2vh;
+  height: 5vh;
+  text-decoration: none;
+  width: 100%;
+}
+.contact p {
+  color: rgba(255, 255, 255, 0.25);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.lastModified:hover,
+.support:hover,
+.contact > p:hover {
+  color: white;
+  scale: 1.1;
 }
