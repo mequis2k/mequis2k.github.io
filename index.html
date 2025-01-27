@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <button id="mainpopup" onclick="hidemain()">
+        Hi, this is my portfolio.
+      </button>
+      <div id="hidden">
+        <h1 class="myprojects">My projects:</h1>
+        <a class="nextproject" href="/ucl"
+          ><p class="nextprojecttxt">
+            UEFA Champions League / Europa League next stage
+            opponent calculator
+          </p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function hidemain() {
+    document.getElementById('mainpopup').style.visibility =
+      'hidden';
+    document.getElementById('hidden').style.visibility =
+      'visible';
+  }
+</script>
